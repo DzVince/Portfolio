@@ -85,7 +85,7 @@ const Projects = () => {
         card.style.transform = "perspective(1000px) rotateX(0deg) rotateY(0deg)"
     }
     return (
-        <section id="projects" className="project">
+        <section id="project" className="project">
 
             {/* Header Section */}
             <div className="projects-header">
