@@ -4,15 +4,17 @@ const NavigationBar = () => {
     return (
         <div className="navbar">
             <div className="navbar-container">
-                <div className="nav-logo">
+
+                <a href="#home" className="nav-logo">
                     VINCE IVAR E. NAZARENO
-                </div>
+                </a>
 
                 <div className="nav-links">
-                    <span>About</span>
-                    <span>Projects</span>
-                    <span>Contact</span>
+                    <a href="#about">About</a>
+                    <a href="#projects">Projects</a>
+                    <a href="#contact">Contact</a>
                 </div>
+
             </div>
         </div>
     );

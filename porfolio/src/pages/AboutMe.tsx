@@ -1,9 +1,86 @@
+import '../styles/aboutme.css'
+import dcwdLogo from '../assets/DCWD (1).png'
+import rmLogo from "../assets/Untitled.png"
+import { Carousel, Image } from "antd";
+import aboutUs from "../assets/aboutUs.png"
+import contactUs from "../assets/ContactUs.png"
+import projects from "../assets/projects.png"
+import reports from "../assets/317aaa78-1a31-49cb-87f9-7cc6d019c93e.jpg"
+import respo from "../assets/dbfc4a1e-395f-4c29-a62c-40f2c0a7e4a0.jpg"
+import "../styles/fontFamily.css"
 const AboutMe = () => {
     return (
-        <>
+        <section id="about" className="about">
 
-        </>
-    )
-}
+            <div className="about-left" style={{}}>
 
-export default AboutMe
+                <p className='Oswald'>
+                    WEB DEVELOPER
+                </p>
+                <p className="about-subtext">
+                    I have one month of experience as a <b>WordPress Developer  </b>using <b>Elementor</b>, where I recently revamped and enhanced a client’s
+                    website to improve its overall design, functionality, and user experience. I focus on delivering clean, modern, and efficient web solutions
+                    tailored to client needs, ensuring better performance and a more engaging online presence through intuitive and responsive designs built with Elementor.
+                </p>
+
+                <div className="work-experience">
+                    <img src={rmLogo} alt="DCWD Logo" className="dcwd-logo" />
+
+                    <div className="work-text poppins-regular">
+                        ROYAL MARKETING
+                        <br />
+                        Wordpress Developer
+                        <br />
+                        December 2025 - January 2026
+                    </div>
+                </div>
+                <div style={{marginBottom: 300}}></div>
+                {/* <div className="about-carousel">
+                    <Carousel arrows>
+                        <Image src={reports} preview={true} />
+                        <Image src={respo} preview={true} />
+                    </Carousel>
+                </div> */}
+            </div>
+
+            <div className="about-right">
+
+                {/* ⭐ Carousel ON TOP */}
+                {/* <div className="about-carousel">
+                    <Carousel arrows>
+                        <Image src={aboutUs} preview={true} />
+                        <Image src={contactUs} preview={true} />
+                        <Image src={projects} preview={true} />
+                    </Carousel>
+                </div> */}
+
+                {/* ⭐ Text Content */}
+                <div className="about-text-container">
+                    <div style={{marginTop: 500}}></div>
+                    <p className="about-subtext">
+                        <b>Front-end React Developer</b> with a strong foundation in modern front-end development and two years of hands-on
+                        project experience. Trained through an intensive full-stack bootcamp, with practical experience using
+                        <b> JavaScript</b>, <b>Typescript</b>, <b>React</b>, <b>HTML</b>, <b>CSS</b>, <b>Tailwind CSS</b> to build responsive and
+                        maintainable web applications.
+                    </p>
+
+                    <div className="work-experience">
+                        <img src={dcwdLogo} alt="DCWD Logo" className="dcwd-logo" />
+
+                        <div className="work-text poppins-regular">
+                            DAVAO CITY WATER DISTRICT
+                            <br />
+                            Front-end Web Developer
+                            <br />
+                            November 2023 - December 2025
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </section>
+    );
+};
+
+export default AboutMe;

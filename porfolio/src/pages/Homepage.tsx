@@ -3,11 +3,12 @@ import gradpic from '../../src/assets/grad-pic.jpg';
 import '../styles/hero.css'
 import '../styles/fontFamily.css'
 import NavigationBar from "../components/NavigationBar";
+import useScrollReveal from "../hooks/useScrollReveal";
 const Homepage = () => {
 
     const fullName = "Vince Ivar E. Nazareno";
     const [typedName, setTypedName] = useState("");
-
+    useScrollReveal();
     useEffect(() => {
         let index = 0;
 
@@ -26,7 +27,7 @@ const Homepage = () => {
     return (
         <>
             <NavigationBar />
-            <div className="hero">
+            <section id="home" className="hero section-hidden">
                 <div className="hero-left">
                     <div className="hero-text">
                         <p className="roboto-bold">
@@ -48,7 +49,7 @@ const Homepage = () => {
                 <div className="hero-right">
                     <img src={gradpic} alt="Profile" width={200} />
                 </div>
-            </div>
+            </section>
         </>
 
     );
