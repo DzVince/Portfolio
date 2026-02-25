@@ -3,6 +3,8 @@ import './App.css'
 import './styles/fontFamily.css'
 import Homepage from './pages/Homepage'
 import AboutMe from './pages/AboutMe'
+import AboutMeSMM from "./pages/AboutMeSMM"
+import Projects from "./pages/Projects"
 
 function App() {
 
@@ -37,6 +39,8 @@ function App() {
     <>
       <Homepage />
       <AboutMe />
+      <AboutMeSMM />
+      <Projects />
     </>
   )
 }

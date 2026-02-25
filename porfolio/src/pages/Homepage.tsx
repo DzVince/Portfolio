@@ -4,6 +4,7 @@ import '../styles/hero.css'
 import '../styles/fontFamily.css'
 import NavigationBar from "../components/NavigationBar";
 import useScrollReveal from "../hooks/useScrollReveal";
+import angas from "../assets/angas.jpg"
 const Homepage = () => {
 
     const fullName = "Vince Ivar E. Nazareno";
@@ -47,7 +48,7 @@ const Homepage = () => {
                 </div>
 
                 <div className="hero-right">
-                    <img src={gradpic} alt="Profile" width={200} />
+                    <img src={angas} alt="Profile" width={200} />
                 </div>
             </section>
         </>

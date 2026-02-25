@@ -7,6 +7,7 @@ import contactUs from "../assets/ContactUs.png"
 import projects from "../assets/projects.png"
 import reports from "../assets/317aaa78-1a31-49cb-87f9-7cc6d019c93e.jpg"
 import respo from "../assets/dbfc4a1e-395f-4c29-a62c-40f2c0a7e4a0.jpg"
+
 import "../styles/fontFamily.css"
 const AboutMe = () => {
     return (
@@ -18,7 +19,7 @@ const AboutMe = () => {
                     WEB DEVELOPER
                 </p>
                 <p className="about-subtext">
-                    I have one month of experience as a <b>WordPress Developer  </b>using <b>Elementor</b>, where I recently revamped and enhanced a client’s
+                    I have <b>1 year </b> of experience as a <b>WordPress Developer  </b>using <b>Elementor</b>, where I recently revamped and enhanced a client’s
                     website to improve its overall design, functionality, and user experience. I focus on delivering clean, modern, and efficient web solutions
                     tailored to client needs, ensuring better performance and a more engaging online presence through intuitive and responsive designs built with Elementor.
                 </p>
@@ -31,10 +32,10 @@ const AboutMe = () => {
                         <br />
                         Wordpress Developer
                         <br />
-                        December 2025 - January 2026
+                        December 2024 - January 2026
                     </div>
                 </div>
-                <div style={{marginBottom: 300}}></div>
+                <div style={{ marginBottom: 300 }}></div>
                 {/* <div className="about-carousel">
                     <Carousel arrows>
                         <Image src={reports} preview={true} />
@@ -56,9 +57,9 @@ const AboutMe = () => {
 
                 {/* ⭐ Text Content */}
                 <div className="about-text-container">
-                    <div style={{marginTop: 500}}></div>
+                    <div style={{ marginTop: 500 }}></div>
                     <p className="about-subtext">
-                        <b>Front-end React Developer</b> with a strong foundation in modern front-end development and two years of hands-on
+                        <b>Front-end React Developer</b> with a strong foundation in modern front-end development and <b>2 years</b> of hands-on
                         project experience. Trained through an intensive full-stack bootcamp, with practical experience using
                         <b> JavaScript</b>, <b>Typescript</b>, <b>React</b>, <b>HTML</b>, <b>CSS</b>, <b>Tailwind CSS</b> to build responsive and
                         maintainable web applications.

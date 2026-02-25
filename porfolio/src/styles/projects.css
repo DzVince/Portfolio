@@ -1,0 +1,151 @@
+.project {
+    display: flex;
+    flex-direction: column;
+    padding: 80px 60px;
+    min-height: 100vh;
+}
+
+.projects-header {
+    max-width: 1000px;
+    padding-top: 120px;
+    margin-left: 8%;
+    text-align: left;
+}
+
+.projects-icon {
+    font-size: 14px;
+    letter-spacing: 1px;
+    opacity: 0.7;
+}
+
+.projects-title {
+    font-family: "Montserrat", sans-serif;
+    font-size: 60px;
+    font-weight: 700;
+    line-height: 1.1;
+    margin-top: 20px;
+}
+
+.projects-subtitle {
+    font-family: "Roboto", sans-serif;
+    margin-top: 20px;
+    font-size: 18px;
+    opacity: 0.7;
+    max-width: 700px;
+    line-height: 1.6;
+}
+
+.projects-grid {
+    display: flex;
+    gap: 40px;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 60px 20px;
+}
+
+.projects-grid .ant-card {
+    width: 480px;
+    border-radius: 20px;
+    transition: transform 0.3s ease;
+}
+
+.projects-grid .ant-card:hover {
+    transform: translateY(-8px);
+}
+
+.project-card {
+    width: 480px;
+    border-radius: 20px !important;
+    overflow: hidden;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    transform-style: preserve-3d;
+}
+
+/* Card body radius */
+.project-card .ant-card-body {
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+/* ============================= */
+/* ⭐ MEDIA FIX (MOST IMPORTANT) */
+/* ============================= */
+
+.project-card .project-card-image,
+.project-card video,
+.project-card .ant-image-img {
+    width: 100%;
+    height: 320px;
+    object-fit: cover;
+}
+
+/* Antd Image wrapper fix */
+.project-card .ant-image {
+    width: 100%;
+}
+
+/* Carousel height lock */
+.project-card .ant-carousel,
+.project-card .ant-carousel .slick-list,
+.project-card .ant-carousel .slick-track,
+.project-card .ant-carousel .slick-slide {
+    height: 320px;
+}
+
+.project-card .ant-carousel .slick-slide>div {
+    height: 100%;
+}
+
+/* Video fix */
+.project-card video {
+    height: 320px;
+    object-fit: cover;
+}
+
+/* Carousel arrows */
+.project-card .ant-carousel .slick-arrow {
+    background: rgba(0, 0, 0, 0.4);
+    border-radius: 50%;
+    padding: 10px;
+}
+
+.project-card .ant-carousel .slick-arrow:hover {
+    background: rgba(0, 0, 0, 0.6);
+}
+
+.project-card .ant-carousel .slick-prev::before,
+.project-card .ant-carousel .slick-next::before {
+    font-size: 28px !important;
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+
+    .projects-title {
+        font-size: 40px;
+    }
+
+    .projects-subtitle {
+        font-size: 16px;
+    }
+
+    .projects-grid {
+        padding: 40px 10px;
+    }
+
+    .projects-grid .ant-card,
+    .project-card {
+        width: 100%;
+    }
+
+    /* Mobile media height */
+    .project-card .project-card-image,
+    .project-card video,
+    .project-card .ant-image-img,
+    .project-card .ant-carousel,
+    .project-card .ant-carousel .slick-list,
+    .project-card .ant-carousel .slick-track,
+    .project-card .ant-carousel .slick-slide {
+        height: 260px;
+    }
+}
