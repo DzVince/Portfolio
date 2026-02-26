@@ -1,0 +1,133 @@
+.contact {
+    align-items: flex-start;
+    justify-content: center;
+    min-height: 100vh;
+    background: #ffffff;
+    padding: 40px 10%;
+}
+
+.contact-container {
+    display: flex;
+    gap: 60px;
+    width: 100%;
+}
+
+.contact-left {
+    flex: 1;
+}
+
+.contact-left h1 {
+    font-size: 42px;
+    font-weight: 600;
+    color: #111;
+}
+
+.contact-left span {
+    color: #4f6cff;
+    /* Accent color */
+}
+
+.contact-left p {
+    margin-top: 20px;
+    font-size: 16px;
+    color: #666;
+    line-height: 1.6;
+}
+
+.contact-right {
+    flex: 2;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+}
+
+.card {
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 16px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.06);
+    transition: all 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.1);
+}
+
+.card .icon {
+    font-size: 24px;
+    color: #4f6cff;
+    margin-bottom: 15px;
+}
+
+.card h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #111;
+}
+
+.card p {
+    font-size: 14px;
+    color: #666;
+    line-height: 1.6;
+}
+
+.contact-cards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+    margin-top: 40px;
+}
+
+
+.logo-carousel-bottom {
+    width: 100%;
+    overflow: hidden;
+    margin-top: 80px;
+    padding: 20px 0;
+    border-top: 1px solid #eee;
+}
+
+.logo-track {
+    display: flex;
+    align-items: center;
+    gap: 70px;
+    width: max-content;
+    animation: scrollLoop 30s linear infinite;
+}
+
+.logo-track img {
+    height: 45px;
+    object-fit: contain;
+    opacity: 0.8;
+    transition: 0.3s ease;
+}
+
+.logo-track img:hover {
+    opacity: 1;
+    transform: scale(1.15);
+}
+
+@keyframes scrollLoop {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(-50%);
+    }
+}
+
+@media (max-width: 992px) {
+    .contact-container {
+        flex-direction: column;
+    }
+
+    .contact-right {
+        grid-template-columns: 1fr;
+    }
+
+    .contact-cards {
+        grid-template-columns: 1fr;
+    }
+}

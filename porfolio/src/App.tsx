@@ -5,6 +5,7 @@ import Homepage from './pages/Homepage'
 import AboutMe from './pages/AboutMe'
 import AboutMeSMM from "./pages/AboutMeSMM"
 import Projects from "./pages/Projects"
+import Contact from "./pages/Contact"
 
 function App() {
 
@@ -41,6 +42,7 @@ function App() {
       <AboutMe />
       <AboutMeSMM />
       <Projects />
+      <Contact />
     </>
   )
 }

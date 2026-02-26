@@ -1,7 +1,7 @@
 .project {
     display: flex;
     flex-direction: column;
-    padding: 80px 60px;
+    /* padding: 80px 60px; */
     min-height: 100vh;
 }
 
@@ -61,15 +61,11 @@
     transform-style: preserve-3d;
 }
 
-/* Card body radius */
 .project-card .ant-card-body {
     border-bottom-left-radius: 20px;
     border-bottom-right-radius: 20px;
 }
 
-/* ============================= */
-/* ⭐ MEDIA FIX (MOST IMPORTANT) */
-/* ============================= */
 
 .project-card .project-card-image,
 .project-card video,
@@ -79,12 +75,10 @@
     object-fit: cover;
 }
 
-/* Antd Image wrapper fix */
 .project-card .ant-image {
     width: 100%;
 }
 
-/* Carousel height lock */
 .project-card .ant-carousel,
 .project-card .ant-carousel .slick-list,
 .project-card .ant-carousel .slick-track,
@@ -96,13 +90,11 @@
     height: 100%;
 }
 
-/* Video fix */
 .project-card video {
     height: 320px;
     object-fit: cover;
 }
 
-/* Carousel arrows */
 .project-card .ant-carousel .slick-arrow {
     background: rgba(0, 0, 0, 0.4);
     border-radius: 50%;
@@ -118,7 +110,6 @@
     font-size: 28px !important;
 }
 
-/* Mobile Responsive */
 @media (max-width: 768px) {
 
     .projects-title {

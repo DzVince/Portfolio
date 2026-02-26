@@ -1,12 +1,6 @@
 import '../styles/aboutme.css'
 import dcwdLogo from '../assets/DCWD (1).png'
 import rmLogo from "../assets/Untitled.png"
-import { Carousel, Image } from "antd";
-import aboutUs from "../assets/aboutUs.png"
-import contactUs from "../assets/ContactUs.png"
-import projects from "../assets/projects.png"
-import reports from "../assets/317aaa78-1a31-49cb-87f9-7cc6d019c93e.jpg"
-import respo from "../assets/dbfc4a1e-395f-4c29-a62c-40f2c0a7e4a0.jpg"
 
 import "../styles/fontFamily.css"
 const AboutMe = () => {
@@ -36,26 +30,9 @@ const AboutMe = () => {
                     </div>
                 </div>
                 <div style={{ marginBottom: 300 }}></div>
-                {/* <div className="about-carousel">
-                    <Carousel arrows>
-                        <Image src={reports} preview={true} />
-                        <Image src={respo} preview={true} />
-                    </Carousel>
-                </div> */}
             </div>
 
             <div className="about-right">
-
-                {/* ⭐ Carousel ON TOP */}
-                {/* <div className="about-carousel">
-                    <Carousel arrows>
-                        <Image src={aboutUs} preview={true} />
-                        <Image src={contactUs} preview={true} />
-                        <Image src={projects} preview={true} />
-                    </Carousel>
-                </div> */}
-
-                {/* ⭐ Text Content */}
                 <div className="about-text-container">
                     <div style={{ marginTop: 500 }}></div>
                     <p className="about-subtext">
