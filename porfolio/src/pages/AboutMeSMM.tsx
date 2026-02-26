@@ -20,7 +20,7 @@ const AboutMeSMM = () => {
 
                     <p className="Oswald"> SOCIAL MEDIA MANAGER </p>
 
-                    <p className="about-subtext">
+                    <p className="aboutMe-subtext">
                         I have <b>1 year</b> of experience as a Social Media Manager, specializing in content scheduling
                         and cross-platform posting using tools such as <b>Buffer</b>, <b>Meta Business Suite</b>, <b>Post Planner Pro</b>, and <b>Canva</b>.
                        
@@ -38,7 +38,7 @@ const AboutMeSMM = () => {
                     </div>
 
                     <p className="Oswald"> SHORT-FORM VIDEO EDITOR</p>
-                    <p className="about-subtext">
+                    <p className="aboutMe-subtext">
                         A Short-Form Video Editor specializing in high-impact content for Reels, TikTok, and digital video advertisements. 
                     </p>
                 </div>

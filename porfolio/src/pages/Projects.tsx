@@ -17,8 +17,10 @@ import { useState } from "react"
 const { Meta } = Card
 
 const Projects = () => {
+
     const [isModalOpen, setIsModalOpen] = useState(false)
     const [selectedVideo, setSelectedVideo] = useState<string | null>(null)
+    const [mousePos, setMousePos] = useState({ x: 50, y: 50 })
     const projectsData = [
         {
             title: "Wordpress Development",
@@ -43,6 +45,15 @@ const Projects = () => {
 
     ]
 
+
+
+    const handleMouseMove2 = (e: React.MouseEvent) => {
+        const { clientX, clientY } = e
+        const x = (clientX / window.innerWidth) * 100
+        const y = (clientY / window.innerHeight) * 100
+
+        setMousePos({ x, y })
+    }
     const handleVideoClick = (video: string) => {
         setSelectedVideo(video)
         setIsModalOpen(true)
@@ -85,7 +96,7 @@ const Projects = () => {
         card.style.transform = "perspective(1000px) rotateX(0deg) rotateY(0deg)"
     }
     return (
-        <section id="project" className="project">
+        <section id="project" className="project" >
 
             {/* Header Section */}
             <div className="projects-header">

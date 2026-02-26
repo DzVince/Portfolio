@@ -33,6 +33,10 @@ const AboutMe = () => {
             </div>
 
             <div className="about-right">
+
+
+
+                {/* ⭐ Text Content */}
                 <div className="about-text-container">
                     <div style={{ marginTop: 500 }}></div>
                     <p className="about-subtext">
