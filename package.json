@@ -2,7 +2,7 @@
   "name": "porfolio",
   "private": true,
   "version": "0.0.0",
-  "homepage": "https://https://dzvince.github.io/Portfolio/",
+  "homepage": "https://dzvince.github.io/Portfolio/",
   "type": "module",
   "scripts": {
     "dev": "vite",
