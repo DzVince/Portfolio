@@ -1,5 +1,4 @@
 import { useState, useEffect } from "react";
-import gradpic from '../../src/assets/grad-pic.jpg';
 import '../styles/hero.css'
 import '../styles/fontFamily.css'
 import NavigationBar from "../components/NavigationBar";
