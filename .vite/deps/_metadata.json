@@ -1,0 +1,55 @@
+{
+  "hash": "4d6a5473",
+  "configHash": "2b91a049",
+  "lockfileHash": "42679916",
+  "browserHash": "2cc5a853",
+  "optimized": {
+    "react/jsx-dev-runtime": {
+      "src": "../../node_modules/react/jsx-dev-runtime.js",
+      "file": "react_jsx-dev-runtime.js",
+      "fileHash": "d671b955",
+      "needsInterop": true
+    },
+    "react": {
+      "src": "../../node_modules/react/index.js",
+      "file": "react.js",
+      "fileHash": "408f7873",
+      "needsInterop": true
+    },
+    "react-dom/client": {
+      "src": "../../node_modules/react-dom/client.js",
+      "file": "react-dom_client.js",
+      "fileHash": "9e080c7a",
+      "needsInterop": true
+    },
+    "lottie-react": {
+      "src": "../../node_modules/lottie-react/build/index.es.js",
+      "file": "lottie-react.js",
+      "fileHash": "4b03db3e",
+      "needsInterop": false
+    },
+    "@ant-design/icons": {
+      "src": "../../node_modules/@ant-design/icons/es/index.js",
+      "file": "@ant-design_icons.js",
+      "fileHash": "8693f321",
+      "needsInterop": false
+    },
+    "antd": {
+      "src": "../../node_modules/antd/es/index.js",
+      "file": "antd.js",
+      "fileHash": "23849cdd",
+      "needsInterop": false
+    }
+  },
+  "chunks": {
+    "chunk-26J2HXMA": {
+      "file": "chunk-26J2HXMA.js"
+    },
+    "chunk-IK2NBY5B": {
+      "file": "chunk-IK2NBY5B.js"
+    },
+    "chunk-6MYGRZGN": {
+      "file": "chunk-6MYGRZGN.js"
+    }
+  }
+}
