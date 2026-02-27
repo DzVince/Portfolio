@@ -29,7 +29,8 @@ const AboutMe = () => {
                         December 2024 - January 2026
                     </div>
                 </div>
-                <div style={{ marginBottom: 300 }}></div>
+                {/* <div style={{ marginBottom: 300 }}></div> */}
+                <div className="about-spacer-bottom"></div>
             </div>
 
             <div className="about-right">
@@ -38,7 +39,8 @@ const AboutMe = () => {
 
                 {/* ⭐ Text Content */}
                 <div className="about-text-container">
-                    <div style={{ marginTop: 500 }}></div>
+                    {/* <div style={{ marginTop: 500 }}></div> */}
+                    <div className="about-spacer-top"></div>
                     <p className="about-subtext">
                         <b>Front-end React Developer</b> with a strong foundation in modern front-end development and <b>2 years</b> of hands-on
                         project experience. Trained through an intensive full-stack bootcamp, with practical experience using

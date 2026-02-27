@@ -13,7 +13,7 @@ import zohologo from "../assets/zohologo.png"
 const Contact = () => {
     return (
         <>
-            <section id="contact" className="contact">
+            <section id="services" className="contact">
                 <div className="contact-container">
                     <div className="contact-left">
                         <h3 className="dm-sansBiggerFont">
