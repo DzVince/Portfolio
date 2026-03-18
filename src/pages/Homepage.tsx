@@ -42,15 +42,15 @@ const Homepage = () => {
                             I'm a freelance <b>Front-end Web Developer </b>,  <b>Social Media Manager </b>, and <b>Short-form Video Editor</b> based in Davao City, Philippines.
                             I specialize in building immersive, responsive, and visually engaging web applications through clean, well-structured code and user-centered design principles.
 
-                            <div style={{marginTop: 30}}>
+                            <div style={{ marginTop: 30 }}>
                                 <a
                                     href="mailto:nazarenovinceivar@gmail.com"
                                     className="hero-button"
                                 >
                                     Get in Touch
                                 </a>
-                                <a style={{marginLeft: 30}}
-                                    href="/vince_cv_dev_latest_cv.pdf"
+                                <a style={{ marginLeft: 30 }}
+                                    href={`${import.meta.env.BASE_URL}vince_cv_dev_latest_cv.pdf`}
                                     download
                                     className="hero-button hero-button-outline"
                                 >

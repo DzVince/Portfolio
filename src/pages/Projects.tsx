@@ -20,6 +20,7 @@ const Projects = () => {
 
     const [isModalOpen, setIsModalOpen] = useState(false)
     const [selectedVideo, setSelectedVideo] = useState<string | null>(null)
+
     const projectsData = [
         {
             title: "Wordpress Development",
@@ -28,7 +29,7 @@ const Projects = () => {
         },
         {
             title: "DCWD Procurement Project",
-            description: "DCWD Procurement project built using React, TypeScript, HTML, CSS, and Ant Design, featuring modern UI components, responsive layouts, and clean, structured interface design for efficient data and procurement presentation.",
+            description: "DCWD Procurement project built using Go High Level, React, TypeScript, HTML, CSS, and Ant Design, featuring modern UI components, responsive layouts, and clean, structured interface design for efficient data and procurement presentation.",
             images: [reports, respo]
         },
         {
@@ -38,35 +39,35 @@ const Projects = () => {
         },
         {
             title: "Short-form Video Edits",
-            description: "High-impact short-form video edits optimized for TikTok, YouTube Shorts, Facebook Reels, and Instagram Reels, designed to capture attention within the first seconds using dynamic pacing, engaging hooks, captions, and trend-aligned storytelling",
+            description: "High-impact short-form video edits optimized for TikTok, YouTube Shorts, Facebook Reels, and Instagram Reels.",
             videos: [vid1, vid2, vid3, vid4]
         },
-
     ]
 
     const handleVideoClick = (video: string) => {
         setSelectedVideo(video)
         setIsModalOpen(true)
     }
+
     const stopAllVideos = () => {
         const videos = document.querySelectorAll("video")
-
         videos.forEach((video: HTMLVideoElement) => {
             video.pause()
             video.currentTime = 0
         })
     }
+
     const handleCloseModal = () => {
         setIsModalOpen(false)
         setSelectedVideo(null)
         stopAllVideos()
     }
+
     const handleMouseMove = (e: any, index: any) => {
         const card = document.getElementById(`project-card-${index}`)
         if (!card) return
 
         const rect = card.getBoundingClientRect()
-
         const x = e.clientX - rect.left
         const y = e.clientY - rect.top
 
@@ -85,10 +86,11 @@ const Projects = () => {
 
         card.style.transform = "perspective(1000px) rotateX(0deg) rotateY(0deg)"
     }
-    return (
-        <section id="project" className="project" >
 
-            {/* Header Section */}
+    return (
+        <section id="project" className="project">
+
+            {/* Header */}
             <div className="projects-header">
                 <span className="projects-icon">✦ Projects</span>
 
@@ -101,10 +103,11 @@ const Projects = () => {
                 </p>
             </div>
 
-            {/* Projects Grid */}
+            {/* Grid */}
             <div className="projects-grid dm-sans">
                 {projectsData.map((project, index) => (
                     <Card
+                        key={index}
                         id={`project-card-${index}`}
                         hoverable
                         className="project-card"
@@ -147,12 +150,22 @@ const Projects = () => {
                     </Card>
                 ))}
             </div>
+
+            {/* ✅ FIXED MODAL */}
             <Modal
                 open={isModalOpen}
                 footer={null}
                 onCancel={handleCloseModal}
-                width={900}
+                width="auto"
                 centered
+                styles={{
+                    body: {
+                        padding: "10px",
+                        display: "flex",
+                        justifyContent: "center",
+                        alignItems: "center"
+                    }
+                }}
             >
                 {selectedVideo && (
                     <video
@@ -161,11 +174,15 @@ const Projects = () => {
                         autoPlay
                         style={{
                             width: "100%",
-                            borderRadius: "12px"
+                            maxWidth: "400px",   // 👈 smaller width
+                            maxHeight: "75vh",   // 👈 fits screen height
+                            borderRadius: "12px",
+                            objectFit: "contain"
                         }}
                     />
                 )}
             </Modal>
+
         </section>
     )
 }

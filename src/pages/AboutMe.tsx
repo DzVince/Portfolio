@@ -43,7 +43,7 @@ const AboutMe = () => {
                     <div className="about-spacer-top"></div>
                     <p className="about-subtext">
                         <b>Front-end React Developer</b> with a strong foundation in modern front-end development and <b>2 years</b> of hands-on
-                        project experience. Trained through an intensive full-stack bootcamp, with practical experience using
+                        project experience. Trained through an intensive full-stack bootcamp, with practical experience using <b>Go High Level</b>,
                         <b> JavaScript</b>, <b>Typescript</b>, <b>React</b>, <b>HTML</b>, <b>CSS</b>, <b>Tailwind CSS</b> to build responsive and
                         maintainable web applications.
                     </p>
