@@ -50,7 +50,7 @@ const Homepage = () => {
                                     Get in Touch
                                 </a>
                                 <a style={{ marginLeft: 30 }}
-                                    href={`${import.meta.env.BASE_URL}vince_cv_dev_latest_cv.pdf`}
+                                    href={`${import.meta.env.BASE_URL}updated_cv_vince.pdf`}
                                     download
                                     className="hero-button hero-button-outline"
                                 >
